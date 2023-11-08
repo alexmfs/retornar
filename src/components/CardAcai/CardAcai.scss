@@ -1,0 +1,45 @@
+.card{
+  &__options{
+    &-header{
+      display: flex;
+      justify-content: space-between;
+      color: var(--color-on-surface-container);
+      margin-block-end: 8px;
+    }
+    &-title{
+      font-size: 16px;
+    }
+    &-description{
+      font-size: 12px;
+    }
+    &-step{
+      font-size: 12px;
+    }
+    &-list{
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      label{
+        display: flex;
+        justify-content: space-between;
+        padding-block: 12px;
+      }
+    }
+    &-list-item{
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+  }
+  &__buttons{
+    width: 85%;
+    display: flex;
+    gap: 8px;
+    margin-left: auto;
+  }
+}
+
+input[type="radio"]{
+  accent-color: #791D8F;
+}

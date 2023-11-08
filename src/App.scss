@@ -1,4 +1,8 @@
 #app{
   background: var(--color-surface);
-  height: 100vh;
+  min-height: 100vh;
+}
+
+body{
+  font-family: 'Ubuntu', sans-serif;
 }

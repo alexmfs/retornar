@@ -1,17 +1,25 @@
 import React from 'react';
 import './Card.scss';
 
-const Card = () => {
+const Card = ({title, description, image, children}) => {
+
   return (
     <div className="card">
       <div className="card__image">
-        <img src="./assets/acai.jpg" alt="" />
+        <img src={image}/>
       </div>
       <div className="card__content">
-        <h2 className="title">
-          Açaí Natural
-        </h2>
-        <p>Super Copo de 500 ml de Açaí Tradicional - Atenção: Contém somente açaí puro! Ideal para quem gosta de aproveitar um açaí puro ou rechear do seu jeito! Obs: não trocamos nem adicionamos itens a esse copo!</p>
+        <h2 className="card__title">{title}</h2>
+        <div className="card__rating">
+          <img src="./assets/estrela.svg"/>
+          <div className="card__rating-note">4.5</div>
+          <div className="card__rating-qtd">(30)</div>
+          <a href="" className="card__rating-details">Ver Avaliações</a>
+        </div>
+        <p className="card__description">{description}</p>
+        
+        {children}
+
       </div>
     </div>
   )

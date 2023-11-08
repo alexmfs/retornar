@@ -1,0 +1,19 @@
+.spinner{
+  display: flex;
+  border: 1px solid #C9CFD4;
+  height: 40px;
+  align-items: center;
+  width: fit-content;
+  border-radius: 5px;
+  min-width: 90px;
+  justify-content: space-between;
+  color: #606870;
+  font-size: 12px;
+
+  button {
+    border: none;
+    background: none;
+    width: 30px;
+    color: #606870;
+  }
+}
