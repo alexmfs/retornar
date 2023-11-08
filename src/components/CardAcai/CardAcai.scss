@@ -29,7 +29,7 @@
     &-list-item{
       display: flex;
       align-items: center;
-      gap: 4px;
+      gap: 8px;
     }
   }
   &__buttons{
@@ -42,4 +42,6 @@
 
 input[type="radio"]{
   accent-color: #791D8F;
+  width: 24px;
+  height: 24px;
 }
